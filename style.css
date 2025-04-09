@@ -122,6 +122,7 @@ html {
     height: 40vh;
     justify-content: center;
     transition: 0.3s ease;
+    flex: 350px;
 }
 
 .type-nav:hover {transition: 0.3s ease-in-out;}
