@@ -162,7 +162,7 @@ html {
     opacity: 70%;
 }
 
-..type-nav:hover > .analyst-avatar {
+.type-nav:hover > .analyst-avatar {
     opacity: 1;
 }
 /* main */
