@@ -102,6 +102,7 @@ html {
 .header {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 .header-text {
     font-size: clamp(1.5rem, 10vw, 3rem);
@@ -120,9 +121,11 @@ html {
     display: flex;
     width: 50%;
     height: 40vh;
-    justify-content: center;
+    justify-content: flex-start;
     transition: 0.3s ease;
     flex: 350px;
+    position: relative;
+    flex-direction: column;
 }
 
 .type-nav:hover {transition: 0.3s ease-in-out;}
@@ -151,5 +154,16 @@ html {
     color: white;
 }
 
+.analyst-avatar {
+    max-height: 250px;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    opacity: 70%;
+}
+
+..type-nav:hover > .analyst-avatar {
+    opacity: 1;
+}
 /* main */
 
