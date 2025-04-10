@@ -50,13 +50,13 @@ html {
     color: white;
 }
 
-.nav > li:nth-child(1):hover {background-color: var(--purple);}
+.nav > li:nth-child(1):hover, .nav > li:nth-child(1) > .type-sublist > li:hover {background-color: var(--purple); border-radius: .5rem;}
 
-.nav > li:nth-child(2):hover {background-color: var(--green);}
+.nav > li:nth-child(2):hover, .nav > li:nth-child(2) > .type-sublist > li:hover {background-color: var(--green); border-radius: .5rem;}
 
-.nav > li:nth-child(3):hover {background-color: var(--blue);}
+.nav > li:nth-child(3):hover, .nav > li:nth-child(3) > .type-sublist > li:hover {background-color: var(--blue); border-radius: .5rem;}
 
-.nav > li:nth-child(4):hover {background-color: var(--yellow);}
+.nav > li:nth-child(4):hover, .nav > li:nth-child(4) > .type-sublist > li:hover {background-color: var(--yellow); border-radius: .5rem;}
 
 .type-group {
     position: relative;
@@ -160,6 +160,7 @@ html {
     top: 120px;
     left: 0;
     opacity: 70%;
+    transition: 0.3s ease;
 }
 
 .type-nav:hover > .analyst-avatar {
