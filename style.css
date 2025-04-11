@@ -27,7 +27,7 @@ html {
 
 .nav {
     list-style-type: none;
-    display: flex;
+    display: none;
     width: 100%;
     justify-content: center;
     padding: 1rem;
@@ -109,6 +109,7 @@ html {
     font-weight: 600;
     color: var(--black);
     padding: 1rem;
+    text-align: center;
 }
 
 /* big-nav */
@@ -120,12 +121,14 @@ html {
 .type-nav {
     display: flex;
     width: 50%;
-    height: 40vh;
+    min-height: 400px;
     justify-content: flex-start;
+    align-items: center;
     transition: 0.3s ease;
-    flex: 350px;
-    position: relative;
+    flex: 500px;
     flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .type-nav:hover {transition: 0.3s ease-in-out;}
@@ -146,25 +149,57 @@ html {
 
 .sentinel:hover {background-color: var(--blue);}
 
-.type-header {
-    font-size: clamp(1.5rem, 10vw, 5rem);
-}
+
 
 .type-nav:hover {
     color: white;
 }
 
-.analyst-avatar {
-    max-height: 250px;
-    position: absolute;
-    top: 120px;
-    left: 0;
-    opacity: 70%;
-    transition: 0.3s ease;
+.type-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.type-nav:hover > .analyst-avatar {
-    opacity: 1;
+.type-header-text {
+    font-size: clamp(1.5rem, 10vw, 5rem);
 }
-/* main */
 
+.type-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    container-type: inline-size;
+    width: 100%;
+}
+
+.avatar-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    flex: 25%;
+}
+
+.avatar {
+    width: 200px;
+}
+
+.avatar-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.type-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+@container (max-width: 800px) {
+    .avatar-container {
+        flex: 50%;
+    }
+  }
