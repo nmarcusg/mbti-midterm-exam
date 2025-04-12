@@ -122,8 +122,9 @@ ul {
     text-align: center;
     padding: clamp(1rem, 10vw, 6rem);
     gap: 2rem;
-    background: url(images/layered-waves-haikei.svg) no-repeat;
-
+    background: url(images/wave.svg) no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
 
 .header-text {
@@ -139,6 +140,7 @@ ul {
     gap: 2rem;
     justify-content: center;
     text-align: center;
+    flex-flow: wrap;
 }
 
 .button {
@@ -146,8 +148,15 @@ ul {
     color: black;
     border: 1px solid black;
     padding: 1rem;
-    border-radius: .5rem;
+    border-radius: 2.5rem;
     font-family: "Open Sans";
+    background-color: white;
+}
+
+.mbti-intro {
+    background: url(images/wave2.svg) no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
 
 .intro-container {
