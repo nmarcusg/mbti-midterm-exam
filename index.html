@@ -8,14 +8,14 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <!-- css styling -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <ul id="nav" class="nav">
+        <ul id="nav" class="nav content-font">
             <li class="type-group">
                 Analysts
                 <ul class="type-sublist">
@@ -59,195 +59,325 @@
     </nav>
 
     <header class="header">
-        <h1 class="header-text">Myers–Briggs Type Indicator Personality Types</h1>
+        <div class="header-text-container">
+            <h1 class="header-text heading-font">What is the Myers-Briggs Type Indicator (MBTI)?</h1>
+            <p class="intro-text content-font">
+                The Myers-Briggs Type Indicator (MBTI) is a widely-used personality assessment tool developed by Katharine Cook Briggs and her daughter Isabel Briggs Myers, inspired by Carl Jung’s theory of psychological types. It categorizes individuals into 16 distinct personality types to help people better understand themselves and others.
+            </p>
+        </div>
+        <div class="button-container">
+            <a href="#main-nav" class="button">Explore MBTI Types</a>
+            <a href="#intro" class="button">Learn more</a>
+        </div>
     </header>
 
-    <section class="parent-types">
-        <div class="type-nav-container">
-            <div class="type-nav analyst">
-                <div class="type-header">
-                    <h2 class="type-header-text">Analysts</h2>
-                    <p>Intuitive (N) and Thinking (T) personality types, known for their rationality, impartiality, and intellectual excellence.</p>
-                </div>
-                <div class="type-container">
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/analyst-entp-debater.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ENTP</p>
-                                <p class="type-nickname">Debater</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/analyst-intp-logician.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">INTP</p>
-                                <p class="type-nickname">Logician</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/analyst-entj-commander.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ENTJ</p>
-                                <p class="type-nickname">Commander</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/analyst-intj-architect.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">INTJ</p>
-                                <p class="type-nickname">Architect</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="type-nav diplomat">
-                <div class="type-header">
-                    <h2 class="type-header-text">Diplomats</h2>
-                    <p>Intuitive (N) and Feeling (F) personality types, known for their empathy, diplomatic skills, and passionate idealism.</p>
-                </div>
-                <div class="type-container">
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/diplomat-enfp-campaigner.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ENFP</p>
-                                <p class="type-nickname">Campaigner</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/diplomat-infp-mediator.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">INFP</p>
-                                <p class="type-nickname">Mediator</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/diplomat-enfj-protagonist.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ENFJ</p>
-                                <p class="type-nickname">Protagonist</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/diplomat-infj-advocate.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">INFJ</p>
-                                <p class="type-nickname">Advocate</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <div class="type-nav-container">
-            <div class="type-nav sentinel">
-                <div class="type-header">
-                    <h2 class="type-header-text">Sentinels</h2>
-                    <p>Observant (S) and Judging (J) personality types, known for their practicality. Focused on order, security, and stability.</p>
-                </div>
-                <div class="type-container">
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/sentinel-esfj-consul.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ESFJ</p>
-                                <p class="type-nickname">Consul</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/sentinel-isfj-defender.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ISFJ</p>
-                                <p class="type-nickname">Defender</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/sentinel-estj-executive.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ESTJ</p>
-                                <p class="type-nickname">Executive</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/sentinel-istj-logistician.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ISTJ</p>
-                                <p class="type-nickname">Logistician</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="type-nav explorer">
-                <div class="type-header">
-                    <h2 class="type-header-text">Explorers</h2>
-                    <p>Observant (S) and Prospecting (P) personality types, known for their spontaneity, ingenuity, and flexibility.</p>
-                </div>
-                <div class="type-container">
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/explorer-esfp-entertainer.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ESFP</p>
-                                <p class="type-nickname">Entertainer</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/explorer-isfp-adventurer.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ISFP</p>
-                                <p class="type-nickname">Adventurer</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/explorer-estp-entrepreneur.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ESTP</p>
-                                <p class="type-nickname">Entrepreneur</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="avatar-container">
-                        <a href="">
-                            <img src="images/explorer-istp-virtuoso.png" alt="" class="avatar">
-                            <div class="avatar-text">
-                                <p class="type-name">ISTP</p>
-                                <p class="type-nickname">Virtuoso</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+    <section class="mbti-intro" id="intro">
+        <div class="intro-container">
+            <div class="intro-content">
+                <!-- Definition & Origin -->
+                <section class="intro-block intro-definition">
+                    <h2 class="intro-header heading-font"></h2>
+                    
+                </section>
+    
+                <!-- Core Framework -->
+                <section class="intro-block">
+                    <h3 class="intro-subheader heading-font">The Four Dichotomies</h3>
+                    <p class="intro-text content-font">
+                        MBTI identifies preferences across four key dimensions:
+                    </p>
+                    <ul class="dichotomy-list content-font">
+                        <li><strong>Extraversion (E) vs. Introversion (I):</strong> Where you focus your energy .</li>
+                        <li><strong>Sensing (S) vs. Intuition (N):</strong> How you process information .</li>
+                        <li><strong>Thinking (T) vs. Feeling (F):</strong> How you make decisions .</li>
+                        <li><strong>Judging (J) vs. Perceiving (P):</strong> How you approach life .</li>
+                    </ul>
+                    <p class="intro-text content-font">
+                        Combining these preferences creates a four-letter type (e.g., ENTP, INFJ), grouped into four roles: <strong>Analysts, Diplomats, Sentinels, and Explorers</strong>.
+                    </p>
+                </section>
+    
+                <!-- Purpose & Use Cases -->
+                <section class="intro-block">
+                    <h3 class="intro-subheader">Why Use the MBTI?</h3>
+                    <p class="intro-text content-font">
+                        The MBTI helps individuals:
+                    </p>
+                    <ul class="purpose-list content-font">
+                        <li>Gain self-awareness about strengths and growth areas .</li>
+                        <li>Improve communication in relationships and workplaces .</li>
+                        <li>Identify career paths aligned with natural tendencies .</li>
+                    </ul>
+                </section>
+    
+                <!-- Disclaimer -->
+                <section class="intro-block disclaimer">
+                    <h3 class="intro-subheader heading-font">A Note on Validity</h3>
+                    <p class="intro-text content-font content-font">
+                        While popular for self-discovery, the MBTI is not a scientifically validated psychological tool. Critics argue it oversimplifies personality and lacks consistency in retesting . Use it as a guide for reflection, not a definitive measure of identity.
+                    </p>
+                </section>
             </div>
         </div>
     </section>
 
-    <section class="introduction">
-        <h2>What is the Myers–Briggs Type Indicator (MBTI)?</h2>
+    <section class="parent-types" id="main-nav">
+        <section class="type-nav-container">
+            <section class="type-nav analyst">
+                <div class="type-header">
+                    <h2 class="type-header-text heading-font">Analysts</h2>
+                    <p class="content-font">Intuitive (N) and Thinking (T) personality types, known for their rationality, impartiality, and intellectual excellence.</p>
+                </div>
+                <div class="type-container">
+                    <div class="avatar-container">
+                        <a href="#ENTP">
+                            <img src="images/analyst-entp-debater.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ENTP</p>
+                                <p class="type-nickname content-font">Debater</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#INTP">
+                            <img src="images/analyst-intp-logician.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">INTP</p>
+                                <p class="type-nickname content-font">Logician</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ENTJ">
+                            <img src="images/analyst-entj-commander.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ENTJ</p>
+                                <p class="type-nickname content-font">Commander</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#INTJ">
+                            <img src="images/analyst-intj-architect.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">INTJ</p>
+                                <p class="type-nickname content-font">Architect</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="type-nav diplomat">
+                <div class="type-header">
+                    <h2 class="type-header-text heading-font">Diplomats</h2>
+                    <p class="content-font">Intuitive (N) and Feeling (F) personality types, known for their empathy, diplomatic skills, and passionate idealism.</p>
+                </div>
+                <div class="type-container">
+                    <div class="avatar-container">
+                        <a href="#ENFP">
+                            <img src="images/diplomat-enfp-campaigner.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ENFP</p>
+                                <p class="type-nickname content-font">Campaigner</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#INFP">
+                            <img src="images/diplomat-infp-mediator.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">INFP</p>
+                                <p class="type-nickname content-font">Mediator</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ENFJ">
+                            <img src="images/diplomat-enfj-protagonist.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ENFJ</p>
+                                <p class="type-nickname content-font">Protagonist</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#INFJ">
+                            <img src="images/diplomat-infj-advocate.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">INFJ</p>
+                                <p class="type-nickname content-font">Advocate</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>    
+        </section>
+        <section class="type-nav-container">
+            <section class="type-nav sentinel">
+                <div class="type-header">
+                    <h2 class="type-header-text heading-font">Sentinels</h2>
+                    <p class="content-font">Observant (S) and Judging (J) personality types, known for their practicality. Focused on order, security, and stability.</p>
+                </div>
+                <div class="type-container">
+                    <div class="avatar-container">
+                        <a href="#ESFJ">
+                            <img src="images/sentinel-esfj-consul.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ESFJ</p>
+                                <p class="type-nickname content-font">Consul</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ISFJ">
+                            <img src="images/sentinel-isfj-defender.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ISFJ</p>
+                                <p class="type-nickname content-font">Defender</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ESTJ">
+                            <img src="images/sentinel-estj-executive.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ESTJ</p>
+                                <p class="type-nickname content-font">Executive</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ISTJ">
+                            <img src="images/sentinel-istj-logistician.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ISTJ</p>
+                                <p class="type-nickname content-font">Logistician</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="type-nav explorer">
+                <div class="type-header">
+                    <h2 class="type-header-text heading-font">Explorers</h2>
+                    <p class="content-font">Observant (S) and Prospecting (P) personality types, known for their spontaneity, ingenuity, and flexibility.</p>
+                </div>
+                <div class="type-container">
+                    <div class="avatar-container">
+                        <a href="#ESFP">
+                            <img src="images/explorer-esfp-entertainer.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ESFP</p>
+                                <p class="type-nickname content-font">Entertainer</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ISFP">
+                            <img src="images/explorer-isfp-adventurer.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ISFP</p>
+                                <p class="type-nickname content-font">Adventurer</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ESTP">
+                            <img src="images/explorer-estp-entrepreneur.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ESTP</p>
+                                <p class="type-nickname content-font">Entrepreneur</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="avatar-container">
+                        <a href="#ISTP">
+                            <img src="images/explorer-istp-virtuoso.png" alt="" class="avatar">
+                            <div class="avatar-text">
+                                <p class="type-name heading-font">ISTP</p>
+                                <p class="type-nickname content-font">Virtuoso</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
     </section>
+
+    <main class="type-content">
+        <section class="analysts">
+            <div class="type">
+                <div class="type-image-container">
+                    <img src="images/analyst-entp-debater.png" alt="ENTP - Debater" class="type-image">
+                </div>
+                <div class="type-content" id="ENTP">
+                    <div class="type-content-header">
+                        <h2 class="type-header-text heading-font">ENTP</h2>
+                        <h3 class="type-nickname-text heading-font">Debater</h3>
+                    </div>
+                    <div class="type-content-text">
+                        <section class="type-description-container">
+                            <p class="type-description content-font">
+                                ENTPs are bold and creative, deconstructing and rebuilding ideas with great mental agility. They pursue their goals vigorously despite any resistance they might encounter.
+                            </p>
+                        </section>
+                        <section class="type-function-container">
+                            <p class="description-header heading-font">Cognitive Functions</p>
+                            <ul class="content-font">
+                                <li><strong>Dominant:</strong> Extraverted Intuition (Ne)</li>
+                                <li><strong>Auxiliary:</strong> Introverted Thinking (Ti)</li>
+                                <li><strong>Tertiary:</strong> Extraverted Feeling (Fe)</li>
+                                <li><strong>Inferior:</strong> Introverted Sensing (Si)</li>
+                            </ul>
+                        </section>
+                        <section class="type-sw-container">
+                            <p class="description-header heading-font">Strengths and Weaknesses</p>
+                            <ul class="content-font">
+                                <li><strong>Strength:</strong> Knowledgeable – ENTPs rarely pass up a good opportunity to learn something new, especially abstract concepts.</li>
+                                <li><strong>Strength:</strong> Excellent Brainstormers – They enjoy analyzing problems from every angle to find the best solutions.</li>
+                                <li><strong>Weakness:</strong> Argumentative – They enjoy debating and may sometimes push discussions into arguments.</li>
+                                <li><strong>Weakness:</strong> Insensitive – They may be so focused on rationality that they overlook others' feelings.</li>
+                            </ul>
+                        </section>
+                        <section class="type-career-container">
+                            <p class="description-header heading-font">Ideal Careers/Work Style</p>
+                            <p class="content-font">
+                                ENTPs thrive in environments that offer intellectual freedom and the opportunity to explore innovative ideas. They are drawn to roles that allow them to engage in their intellectual pursuits on their own terms, such as freelance consultants or software engineers. Their ideal careers enable them to apply themselves fully to understanding and solving complex problems without being constrained by routine or rigid structures.
+                            </p>
+                            <p class="content-font">
+                                In leadership positions, ENTPs are known for their unconventional and forward-thinking approach. They excel at generating new ideas and fostering dynamic work environments that encourage free thinking and debate. Their commitment to pushing boundaries and exploring new possibilities makes them effective leaders who inspire innovation within their teams.
+                            </p>
+                        </section>
+                        <section class="type-relationship-container">
+                            <p class="description-header heading-font">Relationships and Compatibility</p>
+                            <p class="content-font">
+                                &tIn romantic relationships, ENTPs bring their trademark enthusiasm and intellectual curiosity, resulting in partnerships filled with passion and continuous growth. They thrive on lively interactions and seek partners who can engage in stimulating conversations and share in their pursuit of new experiences.
+                            </p>
+                            <p class="content-font">
+                                However, their love for intellectual engagement and personal growth can sometimes be challenging for partners who prefer emotional intimacy over intellectual sparring. ENTPs' tendency to question and challenge everything may be perceived as argumentativeness or insensitivity, especially if they inadvertently dismiss their partner’s feelings in favor of logic and rational argument.
+                            </p>
+                            <p class="content-font">
+                                Compatibility-wise, ENTPs are often drawn to personality types that share their enthusiasm for adventure and intellectual stimulation. They value partners who can match their energy and engage in dynamic, thought-provoking interactions.
+                            </p>
+                        </section>
+                        <section class="type-famous-container">
+                            <p class="description-header heading-font">Famous People that are ENTPs</p>
+                            <ul class="content-font">
+                                <li>Thomas Edison</li>
+                                <li>Mark Twain</li>
+                                <li>Tom Hanks</li>
+                                <li>Sarah Silverman</li>
+                                <li>Céline Dion</li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    
 
 </body>
 </html>
