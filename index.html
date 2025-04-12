@@ -12,49 +12,52 @@
 
     <!-- css styling -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- javascript -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav class="nav">
         <ul id="nav" class="nav content-font">
-            <li class="type-group">
-                Analysts
-                <ul class="type-sublist">
-                    <li>INTJ</li>
-                    <li>INTP</li>
-                    <li>ENTJ</li>
-                    <li>ENTP</li>
-                </ul>
-            </li>
-
-            <li class="type-group">
-                Diplomats
-                <ul class="type-sublist">
-                    <li>INFJ</li>
-                    <li>INFP</li>
-                    <li>ENFJ</li>
-                    <li>ENFP</li>
-                </ul>
-            </li>
-
-            <li class="type-group">
-                Sentinels
-                <ul class="type-sublist">
-                    <li>ISTJ</li>
-                    <li>ISFJ</li>
-                    <li>ESTJ</li>
-                    <li>ESFJ</li>
-                </ul>
-            </li>
-
-            <li class="type-group">
-                Explorers
-                <ul class="type-sublist">
-                    <li>ISTP</li>
-                    <li>ISFP</li>
-                    <li>ESTP</li>
-                    <li>ESFP</li>
-                </ul>
-            </li>
+          <li class="type-group">
+            <a href="#main-nav">Analysts</a>
+            <ul class="type-sublist">
+              <li><a href="#ENTP">ENTP</a></li>
+              <li><a href="#INTP">INTP</a></li>
+              <li><a href="#ENTJ">ENTJ</a></li>
+              <li><a href="#INTJ">INTJ</a></li>
+            </ul>
+          </li>
+      
+          <li class="type-group">
+            <a href="#main-nav">Diplomats</a>
+            <ul class="type-sublist">
+              <li><a href="#ENFP">ENFP</a></li>
+              <li><a href="#INFP">INFP</a></li>
+              <li><a href="#ENFJ">ENFJ</a></li>
+              <li><a href="#INFJ">INFJ</a></li>
+            </ul>
+          </li>
+      
+          <li class="type-group">
+            <a href="#main-nav">Sentinels</a>
+            <ul class="type-sublist">
+              <li><a href="#ESFJ">ESFJ</a></li>
+              <li><a href="#ISFJ">ISFJ</a></li>
+              <li><a href="#ESTJ">ESTJ</a></li>
+              <li><a href="#ISTJ">ISTJ</a></li>
+            </ul>
+          </li>
+      
+          <li class="type-group">
+            <a href="#main-nav">Explorers</a>
+            <ul class="type-sublist">
+              <li><a href="#ESFP">ESFP</a></li>
+              <li><a href="#ISFP">ISFP</a></li>
+              <li><a href="#ESTP">ESTP</a></li>
+              <li><a href="#ISTP">ISTP</a></li>
+            </ul>
+          </li>
         </ul>
     </nav>
 
@@ -74,43 +77,65 @@
     <section class="mbti-intro" id="intro">
         <div class="intro-container">
             <div class="intro-content">
-                <!-- Definition & Origin -->
-                <section class="intro-block intro-definition">
-                    <h2 class="intro-header heading-font"></h2>
-                    
-                </section>
-    
-                <!-- Core Framework -->
+
                 <section class="intro-block">
-                    <h3 class="intro-subheader heading-font">The Four Dichotomies</h3>
+                    <h2 class="intro-subheader heading-font header-text">Origins of the MBTI</h2>
+                    <p class="intro-text content-font">
+                        ​The Myers-Briggs Type Indicator (MBTI) was developed during World War II by Katharine Cook Briggs and her daughter, Isabel Briggs Myers. They were inspired by Swiss psychiatrist Carl Jung's 1921 work, Psychological Types, which introduced the concept of psychological functions and attitudes. Briggs and Myers aimed to create a practical tool to help individuals understand themselves and others better, especially in the context of workplace dynamics and personal relationships. They expanded upon Jung's theories by introducing a fourth dichotomy—Judging vs. Perceiving—resulting in a framework that categorizes personalities into 16 distinct types based on four pairs of opposing traits: Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, and Judging/Perceiving.
+                    </p>
+                </section>
+
+                <section class="intro-block">
+                    <h3 class="intro-subheader heading-font header-text">The Four Dichotomies</h3>
                     <p class="intro-text content-font">
                         MBTI identifies preferences across four key dimensions:
                     </p>
-                    <ul class="dichotomy-list content-font">
-                        <li><strong>Extraversion (E) vs. Introversion (I):</strong> Where you focus your energy .</li>
-                        <li><strong>Sensing (S) vs. Intuition (N):</strong> How you process information .</li>
-                        <li><strong>Thinking (T) vs. Feeling (F):</strong> How you make decisions .</li>
-                        <li><strong>Judging (J) vs. Perceiving (P):</strong> How you approach life .</li>
-                    </ul>
-                    <p class="intro-text content-font">
-                        Combining these preferences creates a four-letter type (e.g., ENTP, INFJ), grouped into four roles: <strong>Analysts, Diplomats, Sentinels, and Explorers</strong>.
-                    </p>
+
+                    <div class="dichotomy-blocks content-font">
+                        <div class="block">
+                            <p class="dichotomy" style="background-color: var(--yellow);">Extraversion (E)</p>
+                            <p class="dichotomy-separation">vs</p>
+                            <p class="dichotomy" style="background-color: var(--light-yellow);">Introversion (I)</p>
+                        </div>
+                        <div class="block-description">
+                            <p>This dichotomy reflects where individuals focus their attention and derive energy—either from the external world (Extraversion) or from internal thoughts and reflections (Introversion).​</p>
+                        </div>
+
+                        <div class="block">
+                            <p class="dichotomy" style="background-color: var(--green);">Sensing (S)</p>
+                            <p class="dichotomy-separation">vs</p>
+                            <p class="dichotomy" style="background-color: var(--light-green);">Intuition (N)</p>
+                        </div>
+                        <div class="block-description">
+                            <p>This pair describes how people prefer to gather information—through concrete, factual data (Sensing) or by interpreting patterns and possibilities (Intuition).​</p>
+                        </div>
+
+                        <div class="block">
+                            <p class="dichotomy" style="background-color: var(--blue);">Thinking (T)</p>
+                            <p class="dichotomy-separation">vs</p>
+                            <p class="dichotomy" style="background-color: var(--light-blue);">Feeling (F)</p>
+                        </div>
+                        <div class="block-description">
+                            <p>This dichotomy pertains to decision-making—objectively and logically (Thinking) or based on personal values and the impact on others (Feeling).</p>
+                        </div>
+
+                        <div class="block">
+                            <p class="dichotomy" style="background-color: var(--purple);">Judging (J)</p>
+                            <p class="dichotomy-separation">vs</p>
+                            <p class="dichotomy" style="background-color: var(--light-purple);">Perceiving (P)</p>
+                        </div>
+                        <div class="block-description">
+                            <p>This pair indicates lifestyle preferences—structured and decided (Judging) or flexible and adaptable (Perceiving).​</p>
+                        </div>
+                    </div>
+
+                    
                 </section>
-    
-                <!-- Purpose & Use Cases -->
-                <section class="intro-block">
-                    <h3 class="intro-subheader">Why Use the MBTI?</h3>
-                    <p class="intro-text content-font">
-                        The MBTI helps individuals:
-                    </p>
-                    <ul class="purpose-list content-font">
-                        <li>Gain self-awareness about strengths and growth areas .</li>
-                        <li>Improve communication in relationships and workplaces .</li>
-                        <li>Identify career paths aligned with natural tendencies .</li>
-                    </ul>
-                </section>
-    
-                <!-- Disclaimer -->
+
+                <p class="intro-text content-font">
+                    Combining these preferences creates a four-letter type (e.g., ENTP, INFJ), grouped into four roles: <strong>Analysts, Diplomats, Sentinels, and Explorers</strong>.
+                </p>
+
                 <section class="intro-block disclaimer">
                     <h3 class="intro-subheader heading-font">A Note on Validity</h3>
                     <p class="intro-text content-font content-font">
@@ -375,9 +400,5 @@
             </div>
         </section>
     </main>
-    
-    
-    
-
 </body>
 </html>
