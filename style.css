@@ -352,7 +352,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: clamp(1rem, 5vw, 15rem);
     text-align: center;
 
 }
@@ -370,7 +370,6 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    gap: 1rem;
 }
 
 .type-content-text {
@@ -396,6 +395,45 @@ ul {
 .description-header {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.divider {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10vh;
+}
+
+.analyst-diplomat { background: url(images/analyst-diplomat-divider.svg); }
+
+
+.diplomat-sentinel { background: url(images/diplomat-sentinel-divider.svg); }
+
+.sentinel-explorer { background: url(images/sentinel-explorer-divider.svg); }
+
+.explorer-footer { background: url(images/explorer-footer.svg); }
+
+
+.analysts {
+    background-color: var(--light-purple);
+}
+
+.diplomats {
+    background-color: var(--light-green);
+}
+
+.sentinels {
+    background-color: var(--light-blue);
+}
+
+.explorers {
+    background-color: var(--light-yellow);
+}
+
+/* footer */
+
+.footer {
+    padding: 2rem;
+    text-align: center;
 }
 
 @container (max-width: 800px) {
