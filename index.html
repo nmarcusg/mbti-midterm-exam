@@ -17,50 +17,58 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <nav class="nav">
-        <ul id="nav" class="nav content-font">
-          <li class="type-group">
-            <a href="#main-nav">Analysts</a>
-            <ul class="type-sublist">
-              <li><a href="#ENTP">ENTP</a></li>
-              <li><a href="#INTP">INTP</a></li>
-              <li><a href="#ENTJ">ENTJ</a></li>
-              <li><a href="#INTJ">INTJ</a></li>
-            </ul>
-          </li>
-      
-          <li class="type-group">
-            <a href="#main-nav">Diplomats</a>
-            <ul class="type-sublist">
-              <li><a href="#ENFP">ENFP</a></li>
-              <li><a href="#INFP">INFP</a></li>
-              <li><a href="#ENFJ">ENFJ</a></li>
-              <li><a href="#INFJ">INFJ</a></li>
-            </ul>
-          </li>
-      
-          <li class="type-group">
-            <a href="#main-nav">Sentinels</a>
-            <ul class="type-sublist">
-              <li><a href="#ESFJ">ESFJ</a></li>
-              <li><a href="#ISFJ">ISFJ</a></li>
-              <li><a href="#ESTJ">ESTJ</a></li>
-              <li><a href="#ISTJ">ISTJ</a></li>
-            </ul>
-          </li>
-      
-          <li class="type-group">
-            <a href="#main-nav">Explorers</a>
-            <ul class="type-sublist">
-              <li><a href="#ESFP">ESFP</a></li>
-              <li><a href="#ISFP">ISFP</a></li>
-              <li><a href="#ESTP">ESTP</a></li>
-              <li><a href="#ISTP">ISTP</a></li>
-            </ul>
-          </li>
-        </ul>
+    <nav class="mobile-nav">
+      <button class="hamburger" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>      
     </nav>
 
+  <nav class="nav" id="nav">
+      <ul id="nav" class="nav content-font">
+        <li class="type-group">
+          <a href="#main-nav">Analysts</a>
+          <ul class="type-sublist">
+            <li><a href="#ENTP">ENTP</a></li>
+            <li><a href="#INTP">INTP</a></li>
+            <li><a href="#ENTJ">ENTJ</a></li>
+            <li><a href="#INTJ">INTJ</a></li>
+          </ul>
+        </li>
+    
+        <li class="type-group">
+          <a href="#main-nav">Diplomats</a>
+          <ul class="type-sublist">
+            <li><a href="#ENFP">ENFP</a></li>
+            <li><a href="#INFP">INFP</a></li>
+            <li><a href="#ENFJ">ENFJ</a></li>
+            <li><a href="#INFJ">INFJ</a></li>
+          </ul>
+        </li>
+    
+        <li class="type-group">
+          <a href="#main-nav">Sentinels</a>
+          <ul class="type-sublist">
+            <li><a href="#ESFJ">ESFJ</a></li>
+            <li><a href="#ISFJ">ISFJ</a></li>
+            <li><a href="#ESTJ">ESTJ</a></li>
+            <li><a href="#ISTJ">ISTJ</a></li>
+          </ul>
+        </li>
+    
+        <li class="type-group">
+          <a href="#main-nav">Explorers</a>
+          <ul class="type-sublist">
+            <li><a href="#ESFP">ESFP</a></li>
+            <li><a href="#ISFP">ISFP</a></li>
+            <li><a href="#ESTP">ESTP</a></li>
+            <li><a href="#ISTP">ISTP</a></li>
+          </ul>
+        </li>
+      </ul>
+  </nav>
+ 
     <header class="header">
         <div class="header-text-container">
             <h1 class="header-text heading-font">What is the Myers-Briggs Type Indicator (MBTI)?</h1>
@@ -603,7 +611,9 @@
             </div>
         </section>
         
-        <div class="divider analyst-diplomat"></div>
+        <div class="">
+          <img src="images/analyst-diplomat-divider.svg" alt="" class="divider">
+        </div>
 
         <!-- Diplomats -->
         <section class="diplomats">
@@ -877,7 +887,9 @@
             </div>
         </section>
 
-        <div class="divider diplomat-sentinel"></div>
+        <div class="">
+          <img src="images/diplomat-sentinel-divider.svg" alt="" class="divider">
+        </div>
         
         <!-- Sentinels -->
         <section class="sentinels">
@@ -1151,7 +1163,9 @@
             </div>
         </section>
 
-        <div class="divider sentinel-explorer"></div>
+        <div class="">
+          <img src="images/sentinel-explorer-divider.svg" alt="" class="divider">
+        </div>
         
         <!-- Explorers -->
         <section class="explorers">
@@ -1425,7 +1439,9 @@
             </div> 
         </section>
 
-        <div class="divider explorer-footer"></div>
+        <div class="">
+          <img src="images/explorer-footer.svg" alt="" class="divider">
+        </div>
         
     </main>
 

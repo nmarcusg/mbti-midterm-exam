@@ -45,6 +45,38 @@ ul {
     list-style-position: inside;  /* Ensure bullets are inside the list */
 }
 
+.mobile-nav {
+    display: none;
+    justify-content: end;
+    align-items: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+    background-color: white;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
 .nav {
     list-style-type: none;
     display: flex;
@@ -398,20 +430,10 @@ ul {
 }
 
 .divider {
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 10vh;
+    display: block;
+    width: 100%;
+    height: clamp(100px, 5vh, 100%);
 }
-
-.analyst-diplomat { background: url(images/analyst-diplomat-divider.svg); }
-
-
-.diplomat-sentinel { background: url(images/diplomat-sentinel-divider.svg); }
-
-.sentinel-explorer { background: url(images/sentinel-explorer-divider.svg); }
-
-.explorer-footer { background: url(images/explorer-footer.svg); }
-
 
 .analysts {
     background-color: var(--light-purple);
@@ -446,5 +468,34 @@ ul {
 @media (max-width: 1000px) {
     .type {
         flex-flow: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        display: flex;
+    }
+    .nav {
+        display: block;
+        padding: 0;
+        text-align: center;
+        top: 3rem;
+    }
+
+    .type-group a {
+        width: 100%;
+    }
+
+    .dichotomy-blocks {
+        flex-wrap: wrap;
+    }
+
+    .block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dichotomy {
+        width: 100%;
     }
 }
